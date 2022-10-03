@@ -58,4 +58,4 @@ elif b==3:
     A = np.array(a)
     r = np.linalg.matrix_rank(A)
     print("Матрица А: ", A, sep='\n')
-    print("Ранг матрицы А завен: ", r)
+    print("Ранг матрицы А равен: ", r)

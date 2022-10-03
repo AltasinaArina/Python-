@@ -1,5 +1,7 @@
 import numpy as np
+import timeit
 from numpy import linalg as LA
+start_time = timeit.default_timer()
 print("Возведение матрицы А размерностью 3х3 в степень -1")
 A = []
 for i in range(3):
@@ -16,3 +18,4 @@ if o == 0:
 else:
     b = np.linalg.inv(a)
     print("Матрица А в степени -1: ", b, sep='\n')
+print("Время работы программы: ",timeit.default_timer() - start_time)
