@@ -1,7 +1,6 @@
 import numpy as np
 import timeit
 from numpy import linalg as LA
-start_time = timeit.default_timer()
 print("Возведение матрицы А размерностью 3х3 в степень -1")
 A = []
 for i in range(3):
@@ -10,6 +9,7 @@ for i in range(3):
         print("Введите элемент матрицы с индексом ", i + 1, j + 1, ":", end='')
         k = int(input())
         A[i].append(k)
+start_time = timeit.default_timer()
 a = np.array(A)
 print("Матрица А: ", a, sep='\n')
 o = np.linalg.det(a)
