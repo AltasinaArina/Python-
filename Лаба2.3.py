@@ -1,6 +1,5 @@
 import copy
 import timeit
-start_time = timeit.default_timer()
 a = []
 for i in range(3):
     a.append([])
@@ -8,6 +7,7 @@ for i in range(3):
         print("Введите элемент матрицы с индексом ", i + 1, j + 1, ":", end='')
         k=int(input())
         a[i].append(k)
+start_time = timeit.default_timer()
 for i in range(3):
     print()
     for j in range(3):
