@@ -8,7 +8,7 @@ for i in range(n):
 print(a)
 print("Сложность алгоритма O(N!)")
 for i in range(fact(n)):
-        print(1)
+        print(1, end=" ")
 print("Введите", n, "элементов списка:")
 b = [int(input()) for i in range(n)]
 b.sort()
@@ -18,7 +18,7 @@ print("Сложность алгоритма O(N^3)")
 for i in range(n):
     for j in range(n):
         for k in range(n):
-            print('0')
+            print('0', end=" ")
 c = 0
 while n > 0:
     n = n // 2
